@@ -1,0 +1,213 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;    
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.clicker {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+    padding-bottom: 0;
+    background-color: #1c1f24;
+    border-radius: 15px;
+}
+
+.stats-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.stats-list-item {
+    width: 30%;
+    background-color: #272a2f;
+    border-radius: 6px;
+    text-align: center;
+    padding: 12px 10px;
+}
+
+.stats-list__description {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.stats-list-item__int {
+    position: relative;
+    font-weight: 700;
+}
+
+.counter-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.stats-list-item__int--coin::before,
+.clicker-content__counter::before {
+    content: "";
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    background-image: url(img/coin-Photoroom.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.stats-list-item__int--coin::before {
+    left: -27px;
+    width: 22px;
+    height: 22px;
+}
+
+.clicker-content__counter::before {
+    width: 60px;
+    height: 60px;
+    left: -70px;
+}
+
+.clicker-content__counter {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+}
+
+.clicker-content__progress {
+    margin: 0 auto;
+    width: 75%;
+    height: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 3px solid #3c3d41;
+    margin-bottom: 25px;
+}
+
+.value {
+    border-radius: 4px;
+    height: 15px;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.clicker-content__capy {
+    width: 300px;
+    height: 300px;
+}
+
+.clicker-content__main-btn {
+    display: block;
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+    border-radius: 50%;
+
+    background: rgb(71,193,255);
+    background: linear-gradient(0deg, rgba(71,193,255,1) 0%, rgba(37,72,206,1) 100%);
+    border: 10px solid #3c3d41;
+    -webkit-box-shadow: 0px 0px 10px 16px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0px 0px 10px 16px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0px 0px 10px 16px rgba(0, 0, 0, 0.2) inset;
+}
+
+.clicker-content__main-btn:active {
+    border: 5px solid #3c3d41;
+    opacity: 85%;
+    transition: 0.05s;
+}
+
+.boost-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.boost-container__energy {
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.boost-container__energy::before,
+.boost-container__boost-btn::before {
+    content: "";
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 30px;
+    height: 45px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.boost-container__energy::before {
+    background-image: url(img/lighting-Photoroom.png);
+    left: -42%;
+}
+
+.boost-container__boost-btn::before {
+    background-image: url(img/raketka-Photoroom.png);
+    left: -70%;
+    width: 40px;
+}
+
+.boost-container__boost-btn {
+    position: relative;
+    border: none;
+    background: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.boost-container__boost-btn:active {
+    opacity: 50%;
+    transition: 0.1s;
+}
+
+.upgrades-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #272a2f;
+}
+
+.upgrades-list-item {
+    width: 20%;
+}
+
+.upgrades-list-item__btn {
+    border: none;
+    background-color: #272a2f;
+    color: #868891;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 40px;
+}
+
+.upgrades-list-item__img {
+    display: block;
+    height: 35px;
+    margin: 0 auto 10px;
+}
+
+.upgrades-list-item__btn:hover {
+    background-color: #202225;
+}
