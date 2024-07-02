@@ -4,6 +4,7 @@ body {
     font-style: normal;    
     font-size: 16px;
     color: #ffffff;
+    background-color: #1c1f24;
 }
 
 .clicker {
@@ -11,7 +12,6 @@ body {
     margin: 0 auto;
     padding: 15px;
     padding-bottom: 0;
-    background-color: #1c1f24;
     border-radius: 15px;
 }
 
