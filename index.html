@@ -15,29 +15,32 @@
         <ul class="stats-list">
             <li class="stats-list-item">
                 <span class="stats-list__description stats-list-item__profit-per-tap">Прибыль за тап:</span>
-                <span class="stats-list-item__int stats-list-item__int--coin">8</span>
+                <span class="stats-list-item__int stats-list-item__int--coin">1</span>
             </li>
             <li class="stats-list-item">
                 <span class="stats-list__description stats-list__coin-needed">Монет для апа:</span>
-                <span class="stats-list-item__int">10M</span>
+                <span class="stats-list-item__int coin-needed">100</span>
             </li>
             <li class="stats-list-item">
                 <span class="stats-list__description stats-list-item__profit-per-hour">Прибыль в час:</span>
-                <span class="stats-list-item__int stats-list-item__int--coin">+109,08K</span>
+                <span class="stats-list-item__int stats-list-item__int--coin">+0</span>
             </li>
         </ul>
         <div class="clicker-content">
             <div class="counter-container">
-                <span class="clicker-content__counter">6,509,186</span>
+                <span class="clicker-content__counter">0</span>
             </div>
             <div class="clicker-content__progress">
-                <div class="value" style="width: 50%;"></div>
+                <span class="progress-level">Level: <span class="current-level">1</span>/10</span>
+                <div class="clicker-content__progress-bar">
+                    <div class="value" style="width: 0%;"></div>
+                </div>
             </div>
             <button class="clicker-content__main-btn">
                 <img src="img/capybara.png" width="300px">
             </button>
             <div class="boost-container">
-                <span class="boost-container__energy">1000/1000</span>
+                <span class="boost-container__energy"><span class="lost">1000</span>/<span class="got">1000</span></span>
                 <button class="boost-container__boost-btn">Boost</button>
             </div>
         </div>
@@ -73,6 +76,7 @@
                 </button>
             </li>
         </ul>
+        <script src="scripts/clicker.js"></script>
     </main>
 </body>
 </html>
